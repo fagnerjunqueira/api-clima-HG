@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Adiciona estilo CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>API-Clima</title>
+    <script src="index.js"></script> <!-- Insere arquivo JS -->
+</head>
+<body>
+    <div class="agora">
+        <div class="container"> <!-- Acopla itens do topo -->
+            <h1 id="cidade"></h1>
+            <h3 id="temperatura"></h3>
+            <h3 id="data"></h3>
+            <h2 id="descricao"></h2>
+        </div>
+        <br>
+        <div class="bloco">
+            <center>
+            <div class="info"> <!-- Acopla itens do meio -->
+                <tr>
+                    <td><h4 id="humidity"></h4></td>
+                    <td><h4 id="wind_speedy"></h4></td>
+                </tr>
+                <tr>
+                    <td><h4 id="sunrise"></h4></td>
+                    <td><h4 id="sunset"></h4></td>
+                </tr>
+            </div>
+            <div class="semana_completa"> <!-- Acopla itens dos proximos dias -->
+                <h2>Previsão para a semana</h2>
+                <div id="semana"></div>
+                </div>
+            </div>
+            <br><br>
+</div>
+</body>
+</html>

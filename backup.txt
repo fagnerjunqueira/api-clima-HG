@@ -1,0 +1,21 @@
+// Exemplo de requisição GET
+var clima = new XMLHttpRequest();
+
+// Seta tipo de requisição e URL com os parâmetros
+clima.open("GET", "https://api.hgbrasil.com/weather?format=json-cors&key=a1aaeac5&user_ip=remote", true);
+
+// Envia a requisição
+clima.send();
+
+// Cria um evento para receber o retorno.
+clima.onreadystatechange = function() {
+  
+  // Caso o state seja 4 e o http.status for 200, é porque a requisiçõe deu certo.
+	if (clima.readyState == 4 && clima.status == 200) {
+    
+		var previsao = clima.responseText;
+		
+    // Retorno do Ajax
+		console.log(previsao);
+	}
+}

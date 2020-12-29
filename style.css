@@ -1,0 +1,53 @@
+body{
+    padding: 0.3%;
+    background: -webkit-linear-gradient(top, #088fad 20%, #00d5ff 100%);
+}
+
+div.container {
+    height: 100%;
+    text-align: center;
+}
+
+#descricao {
+    color: white;
+    font-size: 40px;
+    background-color: black;
+    margin-top: 2%;
+    border-radius: 5px;
+}
+
+.bloco {
+    height: 100%;
+}
+.info{
+    font-size: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 5%;
+    margin-top: 1%;
+}
+.semana_completa{
+    margin-top: 2%;
+    background-color: white;
+    border-radius: 5px;
+    margin: 5%;
+}
+
+#cidade {
+    display: inline-block;
+    font-size: 80px;
+}
+
+#temperatura {
+    display: inline-block;
+    padding-left: 5%;
+    font-size: 40px;
+}
+
+#data {
+    padding: 8px;
+}
+
+#semana > tr > td {
+    padding: 6px;
+}
